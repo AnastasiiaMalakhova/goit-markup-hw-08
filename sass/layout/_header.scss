@@ -1,5 +1,7 @@
 .header {
   border-bottom: 1px solid var(--border-header);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__site-navigation {
@@ -36,11 +38,31 @@
 
 .header__site-nav {
   display: flex;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
 }
 
 .header__contacts {
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
 }
 
 .header__item {
@@ -60,4 +82,32 @@
   .header__link:focus & {
     fill: var(--accent-color);
   }
+}
+
+/*Menu*/
+
+.menu {
+  background-color: #ffffff;
+  border: currentColor;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+
+.menu__icon {
+  margin-left: auto;
+}
+
+.mob-menu {
+  // width: 480px;
+  // height: 100vh;
+  position: fixed;
+  background-color: var(--white-color);
 }

@@ -1,9 +1,9 @@
 .icon {
   display: flex;
+  justify-content: center;
   align-items: center;
   list-style: none;
   flex-basis: calc((100% - 30px) / 4);
-  margin-top: 16px;
   width: 206px;
   height: 44px;
 }
