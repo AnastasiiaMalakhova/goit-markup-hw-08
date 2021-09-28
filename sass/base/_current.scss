@@ -9,3 +9,11 @@
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+
+.current {
+  color: var(--accent-color);
+}
+
+.header__link.link.header__link--current {
+  color: var(--accent-color);
+}
